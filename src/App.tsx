@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
-    <>
+    <div className="box-border">
       <Router>
         <DeskNav />
         <MobNav />
@@ -14,7 +14,7 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
-    </>
+    </div>
   );
 };
 
