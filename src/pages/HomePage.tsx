@@ -1,7 +1,9 @@
 import Category from "../components/Categories/Category";
 import menImage from "../assets/images/MenShoes.jpeg";
 import womenImage from "../assets/images/womenShoes.jpeg";
+import kidsImage from "../assets/images/kids-shoes.jpg";
 import FeaturedShoes from "../components/Featured/Featured";
+import f1 from "../assets/images/converse1.jpg";
 
 const categories = [
   {
@@ -17,7 +19,7 @@ const categories = [
     button: "Shop Women",
   },
   {
-    img: womenImage,
+    img: kidsImage,
     about:
       "Constructed from luxury nylons, leathers, and custom hardware, featuring sport details such as hidden breathing vents, waterproof + antimicrobial linings, and more.",
     button: "Shop Kids",
@@ -41,9 +43,18 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div>
-        <p className="uppercase text-center">Featured Products</p>
-        <FeaturedShoes />
+      <div className="mt-[4rem] flex flex-col items-center">
+        <p className="uppercase text-center text-[28px] tracking-widest">
+          Featured Products
+        </p>
+        <div className="w-[90vw] mt-8">
+          <FeaturedShoes
+            name={"Chuck Taylor All Star"}
+            img={f1}
+            price={"1234"}
+            type={"Unisex High Top Shoe"}
+          />
+        </div>
       </div>
     </div>
   );
