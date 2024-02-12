@@ -3,6 +3,7 @@ import DeskNav from "./components/Navbar/DeskNav";
 import MobNav from "./components/Navbar/MobNav";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer/Footer";
+import SignUp from "./pages/SignUp";
 const App = () => {
   return (
     <div className="box-border">
@@ -11,6 +12,7 @@ const App = () => {
         <MobNav />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path ="/signup" element={<SignUp/>} />
         </Routes>
         <Footer />
       </Router>
