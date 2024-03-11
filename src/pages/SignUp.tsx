@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const SignUp = () => {
@@ -25,7 +26,7 @@ const SignUp = () => {
         <input type="password" className={inputClass} placeholder="Enter your password again"/>
         </div>
         <button className="bg-black text-white rounded-md py-2 px-8 text-[14px]">Sign Up</button>
-        <p>Already have an account? Sign in</p>
+        <p>Already have an account? <Link to="/signin">Sign in</Link></p>
         </div>
     </div>
   )
