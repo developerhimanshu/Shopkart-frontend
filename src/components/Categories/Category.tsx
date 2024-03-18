@@ -11,7 +11,7 @@ const Category = ({gender, img, about, button }: CategoryProp) => {
     <div className="w-[360px] flex flex-col items-start gap-2">
       <img src={img} className="h-[360px] w-[280px]" />
       <p>{about}</p>
-      <Link to={`/${gender}`}>
+      <Link to={`/product/${gender}`}>
       <div className="px-[8px] text-white py-[6px] bg-[#464545] w-[120px]">
         {button}
       </div>

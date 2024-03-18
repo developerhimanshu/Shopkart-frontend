@@ -4,9 +4,13 @@ import Shoes from '../components/Shoes/Shoes'
 const ShopMen = () => {
 
   return (
-    <div className='flex'>
+    <div>
+      <p className='text-[4rem] font-bold text-center'>Men's Shoes</p>
+      <div className='border-solid border-b-[2px]'></div>
+      <div className='flex '>
       <Filters />
       <Shoes/>
+      </div>
     </div>
   )
 }

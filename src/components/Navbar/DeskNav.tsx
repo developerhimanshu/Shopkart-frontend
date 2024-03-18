@@ -6,8 +6,8 @@ const DeskNav = () => {
     <div className="hidden md:flex h-[10vh]  items-center justify-between px-4 bg-white sticky top-0 z-10 shadow-md">
       <Link to="/"><span className="uppercase font-semibold">Joota.com</span></Link>
       <div className="text-black flex gap-4">
-        <Link to="/men">Men</Link>
-        <Link to="/women">Women</Link>
+        <Link to="/product/men">Men</Link>
+        <Link to="/product/women">Women</Link>
       </div>
       <div className="flex gap-4 items-center">
       <BiSearch size={20} className="text-gray-300  cursor-pointer  z-10" />
